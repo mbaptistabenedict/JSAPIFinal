@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rick and Morty API Search</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <div class="background__div"></div>
+    <div class="hero__container">
+      <h1>Rick and Morty<br />Character & Episode Index</h1>
+      <p class="section__jump"><a href="#SFC">Search by Character</a></p>
+      <p class="section__jump"><a href="#SFE">Search by Episode</a></p>
+      <p class="title__para"><br/>
+        I've enlisted some helpful Characters and Keywords for your search.<br />For
+        the true Rick and Morty fans, feel free to go wild on your searches, <br />
+        from characters to episodes, the index will help you take a deep dive into <br /> the world of Rick and Morty!
+      </p>
+      <!-- <p class="section__jump"><a href="#SFL">Search by Location</a></p> -->
+    </div>
+
+    <div id="SFC" class="content__wrapper">
+      <h2>Search for Characters</h2>
+      <p id="copy__paste--clip">
+        Click any name to copy, and paste by clicking again in the text field.
+      </p>
+      <div class="input__button--wrapper">
+        <div class="useful__keywords">
+          <ul id="characterList">
+            <li class="character-item" data-name="Rick Sanchez">
+              Rick Sanchez
+            </li>
+            <li class="character-item" data-name="Morty Smith">Morty Smith</li>
+            <li class="character-item" data-name="Summer Smith">
+              Summer Smith
+            </li>
+            <li class="character-item" data-name="Beth Smith">Beth Smith</li>
+            <li class="character-item" data-name="Jerry Smith">Jerry Smith</li>
+          </ul>
+
+          <p id="copyMessage" class="hidden">Copied to clipboard!</p>
+        </div>
+
+        <input
+          type="text"
+          id="characterInput"
+          placeholder="Enter character name"
+        />
+        <button onclick="searchCharacters()">Search Characters</button>
+      </div>
+      <div
+        id="characterResultsContainer"
+        class="hidden character__results--wrapper"
+      >
+        <div class="skeleton-loader" id="characterSkeletonLoader">
+          <div class="skeleton skeleton-title"></div>
+          <div class="skeleton skeleton-text"></div>
+          <div class="skeleton skeleton-img"></div>
+        </div>
+        <div id="characterResults"></div>
+      </div>
+    </div>
+
+    <div id="SFE" class="content__wrapper">
+      <h2>Search for Episodes</h2>
+      <p id="copy__paste--clip">
+        Click any Episode to copy, and paste by clicking again in the text
+        field.
+      </p>
+      <div class="input__button--wrapper">
+        <div class="useful__keywords">
+          <ul id="characterList">
+            <li class="character-item" data-name="Ricksy Business">
+              Ricksy Business
+            </li>
+            <li
+              class="character-item"
+              data-name="Close Rick-Counters of the Rick Kind"
+            >
+              Close Rick-Counters of the Rick Kind
+            </li>
+            <li class="character-item" data-name="Raising Gazorpazorp">
+              Raising Gazorpazorp
+            </li>
+            <li
+              class="character-item"
+              data-name="Something Ricked This Way Comes"
+            >
+              Something Ricked This Way Comes
+            </li>
+            <li class="character-item" data-name="Rixty Minutes">
+              Rixty Minutes
+            </li>
+          </ul>
+          <p id="copy__paste--clip">Other Keywords</p>
+          <ul id="characterList" class="other__keywords">
+            <li class="character-item" data-name="Rick">Rick</li>
+            <li class="character-item" data-name="Morty">Morty</li>
+            <li class="character-item" data-name="Alien">Alien</li>
+            <li class="character-item" data-name="Trouble">Trouble</li>
+            <li class="character-item" data-name="Destroy">Destroy</li>
+          </ul>
+
+          <p id="copyMessage" class="hidden">Copied to clipboard!</p>
+        </div>
+
+        <input type="text" id="episodeInput" placeholder="Enter episode name" />
+        <button onclick="searchEpisodes()">Search Episodes</button>
+      </div>
+      <div
+        id="episodeResultsContainer"
+        class="hidden episode__results--wrapper"
+      >
+        <div class="skeleton-loader" id="episodeSkeletonLoader">
+          <div class="skeleton skeleton-title"></div>
+          <div class="skeleton skeleton-text"></div>
+          <div class="skeleton skeleton-img"></div>
+        </div>
+        <div id="episodeResults"></div>
+      </div>
+    </div>
+
+    <!-- <div id="SFL" class="content__wrapper">
+      <h2>Search for Locations</h2>
+      <div class="input__button--wrapper">
+        <div class="useful__keywords">
+          <ul id="characterList">
+            <li class="character-item" data-name="Rick Sanchez">
+              Rick Sanchez
+            </li>
+            <li class="character-item" data-name="Morty Smith">Morty Smith</li>
+            <li class="character-item" data-name="Summer Smith">
+              Summer Smith
+            </li>
+            <li class="character-item" data-name="Beth Smith">Beth Smith</li>
+            <li class="character-item" data-name="Jerry Smith">Jerry Smith</li>
+          </ul>
+
+          <p id="copyMessage" class="hidden">Copied to clipboard!</p>
+        </div>
+        <input
+          type="text"
+          id="locationInput"
+          placeholder="Enter location name"
+        />
+        <button onclick="searchLocations()">Search Locations</button>
+      </div>
+      <div
+        id="locationResultsContainer"
+        class="hidden location__results--wrapper"
+      >
+        <div class="skeleton-loader" id="locationSkeletonLoader">
+          <div class="skeleton skeleton-title"></div>
+          <div class="skeleton skeleton-text"></div>
+          <div class="skeleton skeleton-img"></div>
+        </div>
+        <div id="locationResults"></div>
+      </div>
+    </div> -->
+  </body>
+</html>
