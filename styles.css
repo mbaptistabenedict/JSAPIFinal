@@ -102,6 +102,13 @@ button {
   color: white;
   font-weight: bold;
   margin-top: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background: #c246c8;
 }
 
 .content__wrapper {
