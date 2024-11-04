@@ -32,6 +32,7 @@ body {
 
 .back__to--top {
   font-family: "Roboto", sans-serif;
+  font-size: 20px;
   position: fixed;
   top: 20%;
   left: 80%;
@@ -44,9 +45,9 @@ body {
   justify-content: center;
   align-items: center;
   box-shadow: 4px 4px 15px #00000040;
-  font-weight: bold;
   cursor: pointer;
   transition: all 0.3s ease;
+  font-weight: bold;
   z-index: 99;
 }
 
