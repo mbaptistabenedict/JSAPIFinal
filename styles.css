@@ -30,14 +30,43 @@ body {
   }
 }
 
+.back__to--top {
+  font-family: "Roboto", sans-serif;
+  position: fixed;
+  top: 20%;
+  left: 80%;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #d265d7;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 4px 4px 15px #00000040;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 99;
+}
+
+.back__to--top:hover {
+  background-color: #fcfbf4;
+  color: #242424;
+}
+
 .hero__container {
   display: flex;
-  padding: 20px;
+  padding: 40px;
   flex-direction: column;
   justify-content: start;
   height: 100vh;
   width: 100vw;
   background-image: linear-gradient(to bottom, #000, #24242490, #ffffff00);
+}
+
+span {
+  font-family: "Creepster", sans-serif;
 }
 
 .section__jump {
@@ -107,8 +136,8 @@ button {
 }
 
 button:hover {
-    transform: scale(1.1);
-    background: #c246c8;
+  transform: scale(1.1);
+  background: #c246c8;
 }
 
 .content__wrapper {
@@ -216,8 +245,7 @@ button:hover {
 
 .skeleton-loader {
   position: sticky;
-  margin: 10px;
-  padding: 10px;
+  padding: 20px;
   top: 0;
   left: 0;
   justify-content: space-between;
@@ -227,6 +255,7 @@ button:hover {
   z-index: 1000;
   animation: display 1s ease-in-out;
   animation-delay: 1s;
+  background-color: #242424;
 }
 
 @keyframes display {

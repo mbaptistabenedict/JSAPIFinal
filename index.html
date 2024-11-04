@@ -8,16 +8,16 @@
     <script src="app.js"></script>
   </head>
   <body>
-    <div class="hero__container">
+    <a class="back__to--top" href="#hero__container">Top</a>
+    <div id="hero__container" class="hero__container">
       <h1>Rick and Morty<br />Character & Episode Index</h1>
       <p class="section__jump"><a href="#SFC">Search by Character</a></p>
       <p class="section__jump"><a href="#SFE">Search by Episode</a></p>
       <p class="title__para"><br/>
         I've enlisted some helpful Characters and Keywords for your search.<br />For
         the true Rick and Morty fans, feel free to go wild on your searches, <br />
-        from characters to episodes, the index will help you take a deep dive into <br /> the world of Rick and Morty!
+        from characters to episodes, the index will help you take a deep dive into <br /> the world of <span>Rick and Morty!</span>
       </p>
-      <!-- <p class="section__jump"><a href="#SFL">Search by Location</a></p> -->
     </div>
 
     <div id="SFC" class="content__wrapper">
@@ -120,43 +120,5 @@
         <div id="episodeResults"></div>
       </div>
     </div>
-
-    <!-- <div id="SFL" class="content__wrapper">
-      <h2>Search for Locations</h2>
-      <div class="input__button--wrapper">
-        <div class="useful__keywords">
-          <ul id="characterList">
-            <li class="character-item" data-name="Rick Sanchez">
-              Rick Sanchez
-            </li>
-            <li class="character-item" data-name="Morty Smith">Morty Smith</li>
-            <li class="character-item" data-name="Summer Smith">
-              Summer Smith
-            </li>
-            <li class="character-item" data-name="Beth Smith">Beth Smith</li>
-            <li class="character-item" data-name="Jerry Smith">Jerry Smith</li>
-          </ul>
-
-          <p id="copyMessage" class="hidden">Copied to clipboard!</p>
-        </div>
-        <input
-          type="text"
-          id="locationInput"
-          placeholder="Enter location name"
-        />
-        <button onclick="searchLocations()">Search Locations</button>
-      </div>
-      <div
-        id="locationResultsContainer"
-        class="hidden location__results--wrapper"
-      >
-        <div class="skeleton-loader" id="locationSkeletonLoader">
-          <div class="skeleton skeleton-title"></div>
-          <div class="skeleton skeleton-text"></div>
-          <div class="skeleton skeleton-img"></div>
-        </div>
-        <div id="locationResults"></div>
-      </div>
-    </div> -->
   </body>
 </html>
